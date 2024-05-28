@@ -32,4 +32,16 @@ end
 sexo = "M"
 
 puts (sexo == "M" ? "Masculino" : "Feminino")
-        
+
+
+
+
+
+
+puts y = 3
+
+unless y >=2
+    puts "o y é menor que 2"
+else
+    puts "o y é maior que 2"
+end        
