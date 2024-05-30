@@ -5,7 +5,7 @@ puts "derek"
 puts "----------"
 #constantes
 
-#usadas para representar valores não mutaveis
+#usadas para representar valores que não serão alterados e serão usados constantemente
 #use letras maiusculas para declarar constantes
 
 NOME = "barragão"
