@@ -17,3 +17,8 @@
 #TUDO EM RUBY É OBJETO! POR ISSO PODE UTILIZAR .CLASS em qualquer canto
 
 puts 1.class #vai retornar integer
+
+
+#vantagem de tudo ser objeto: automaticamente voce ganha varias ações/métodos em seus objetos
+
+puts "123".reverse
