@@ -90,7 +90,7 @@ puts "--------------------------------------"
         end
     end
     
-    npc = Npc.new(2)
+    npc = Npc.new(2) #aqui posso definir quantas vezes vai contar, ao inves de 5 defini para 2
     puts npc.loja
     puts npc.vender
     
