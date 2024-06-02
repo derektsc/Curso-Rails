@@ -23,12 +23,12 @@
             texto
         end
         
-        def self.gritar(texto)
+        def self.gritar(texto) # método de classe
             "#{texto}!!!!!"
         end
     end
     
     
-    puts Pessoa2.gritar("ola")
+    puts Pessoa2.gritar("ola") #note que nao instanciei, chamei a classe direto pois la ja usa o "self."
     
     
