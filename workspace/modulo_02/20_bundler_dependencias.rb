@@ -21,3 +21,5 @@
 #e cria um arquivo Gemfile.lock, mostra as versões de cada gema instalada
 
 #exemplo na pasta bundlerr
+
+#04/06/2024, hoje foquei na unreal engine, mas ainda nao tenho repositorio para isso, entao estou registrando nesse comentario do curso de rails que retomarei amanha.
