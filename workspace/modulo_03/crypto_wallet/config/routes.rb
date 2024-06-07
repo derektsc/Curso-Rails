@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  resources :coins
+  resources :coins #declara 7 rotas de uma vez só para utilizar o CRUD
+
+  root to: 'welcome#index'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

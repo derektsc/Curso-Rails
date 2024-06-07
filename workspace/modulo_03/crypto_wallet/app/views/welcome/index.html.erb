@@ -10,7 +10,6 @@
 
 <p>Derek Barragão</p>
 
-
 <p> A soma é: <%= 1 + 1 %> </p>
 <p> Seu nome de tras pra frente é: <%= "derek".reverse %> </p>
 
@@ -20,3 +19,11 @@
 <p>A data de hoje é: <%= date_br(Date.today) %></p>
 
 <%#= esse é um comentario %>
+
+<p>
+    voce esta em ambiente de <%= Rails.env %>
+</p>
+
+<p>
+    nome do ambiente utilizando helper <%= ambiente_rails %>
+</p>
