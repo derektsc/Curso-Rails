@@ -2,6 +2,21 @@
 
 <%= render @coin %>
 
+<p> 
+  <strong> Description: </strong>
+  <%= @coin.description %>
+</p>
+
+<p>
+  <strong> acronym:</strong>
+  <%= @coin.acronym %>
+</p>
+
+<p>
+  <strong> img </strong>
+  <%= image_tag @coin.url_image, size: "30x30" %>
+</p>
+
 <div>
   <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
   <%= link_to "Back to coins", coins_path %>
