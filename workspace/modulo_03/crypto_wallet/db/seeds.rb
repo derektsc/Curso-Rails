@@ -8,18 +8,54 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-puts "cadastrando as moedas"
+spinner = TTY::Spinner.new("[:spinner] Cadastrando Moedas...")
+spinner.auto_spin
 
-Coin.create!(
-    description: "Bitcoin",
+
+coins = [
+    {description: "Bitcoin",
     acronym: "BTC",
-    url_image: "https://static.vecteezy.com/system/resources/previews/019/767/927/non_2x/bitcoin-logo-bitcoin-icon-transparent-free-png.png"
-)
+    url_image: "https://icons.iconarchive.com/icons/froyoshark/enkel/512/Bitcoin-icon.png"},
 
+    {description: "Ethereum",
+    acronym: "ETH",
+    url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/512px-Ethereum-icon-purple.svg.png"},
+
+    {description: "Dash",
+    acronym: "DASH",
+    url_image: "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/dash_dashcoin-512.png"},
+
+    {description: "coin teste",
+    acronym: "test",
+    url_image: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/testing-logo-design-template-ce84480d61b3db9a8e1522a99875832f_screen.jpg?ts=1615794516"}
+]
+
+coins.each do |coin|
+    sleep(1)
+    Coin.find_or_create_by!(coin)
+end
+
+spinner.success("(Concluido!)")
+
+=begin esse codigo esta refatorado acima
 Coin.create!(
-    description: "TESTE",
-    acronym: "TEST",
-    url_image: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/testing-logo-design-template-ce84480d61b3db9a8e1522a99875832f_screen.jpg?ts=1615794516"
-)
+    [
+        {description: "Bitcoin",
+        acronym: "BTC",
+        url_image: "https://icons.iconarchive.com/icons/froyoshark/enkel/512/Bitcoin-icon.png"},
 
-puts "moedas cadastradas"
+        {description: "Ethereum",
+        acronym: "ETH",
+        url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/512px-Ethereum-icon-purple.svg.png"},
+
+        {description: "Dash",
+        acronym: "DASH",
+        url_image: "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/dash_dashcoin-512.png"},
+
+        {description: "coin teste",
+        acronym: "test",
+        url_image: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/testing-logo-design-template-ce84480d61b3db9a8e1522a99875832f_screen.jpg?ts=1615794516"}
+    ]
+)
+=end
+
