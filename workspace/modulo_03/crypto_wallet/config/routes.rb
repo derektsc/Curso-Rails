@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mining_types
   get 'welcome/index'
   resources :coins #declara 7 rotas de uma vez só para utilizar o CRUD
 
